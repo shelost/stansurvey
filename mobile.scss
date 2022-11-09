@@ -55,6 +55,7 @@
         visibility: hidden;
         opacity: 0;
         transition: 0.2s ease;
+        padding-bottom: 20px;
 
         h1{
             font-size: 18px;
@@ -282,6 +283,7 @@
 
             button{
                 border: none;
+                color: black;
                 width: 86vw;
                 height: 13vw;
                 background: white;

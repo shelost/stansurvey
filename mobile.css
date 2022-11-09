@@ -66,6 +66,7 @@
     opacity: 0;
     -webkit-transition: 0.2s ease;
     transition: 0.2s ease;
+    padding-bottom: 20px;
   }
   .question h1 {
     font-size: 18px;
@@ -300,6 +301,7 @@
   }
   #end .expo button {
     border: none;
+    color: black;
     width: 86vw;
     height: 13vw;
     background: white;

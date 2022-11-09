@@ -292,7 +292,6 @@ function Draw(list) {
                 Sortable.create(area, {
                     animation: 150,
                     dragoverBubble: true,
-                    sort: true,
                     draggable: '.sortable',
                     ghostClass: 'bro'
                 });
