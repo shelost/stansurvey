@@ -1,0 +1,345 @@
+body {
+  font-family: Plus Jakarta Sans, Inter, sans-serif;
+  margin: 0;
+}
+
+p {
+  font-family: Inter, sans-serif;
+}
+
+@media screen and (min-width: 800px) {
+  #area {
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 60px;
+  }
+  #menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 20px;
+  }
+  #menu .num {
+    background: rgba(0, 16, 109, 0.05);
+    color: #00106D;
+    width: 36px;
+    height: 36px;
+    margin: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    -webkit-transition: 0.1s ease;
+    transition: 0.1s ease;
+  }
+  #menu .num h2 {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 36px;
+    margin: 0;
+    text-align: center;
+  }
+  #menu .num.active {
+    background: #6355ff;
+    color: white;
+  }
+  .question {
+    width: 600px;
+    background: white;
+    -webkit-box-shadow: 0 10px 50px rgba(0, 16, 109, 0.08), inset 0 -5px 10px rgba(0, 0, 0, 0.03);
+            box-shadow: 0 10px 50px rgba(0, 16, 109, 0.08), inset 0 -5px 10px rgba(0, 0, 0, 0.03);
+    padding: 30px 40px;
+    border-radius: 15px;
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+  }
+  .question h1 {
+    font-size: 18px;
+    letter-spacing: 0.05px;
+    margin-top: 10px;
+    margin-bottom: 36px;
+  }
+  .question .grid {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .question .grid .img {
+    border: 2px solid rgba(0, 16, 109, 0);
+    border-radius: 15px;
+    padding: 5px;
+    width: 46%;
+    margin: 5px;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .question .grid .img img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  .question .grid .img:hover {
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
+    background: rgba(0, 16, 109, 0.08);
+  }
+  .question .grid .img.active {
+    border: 2px solid #6355ff;
+  }
+  .question .choices {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+    margin-bottom: -10px;
+  }
+  .question .choices h3 {
+    margin: 0;
+    margin-top: -5px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.3);
+  }
+  .question .choices .choice {
+    background: rgba(0, 16, 109, 0.05);
+    border: 2px solid rgba(0, 16, 109, 0);
+    padding: 18px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+    cursor: pointer;
+  }
+  .question .choices .choice p {
+    font-size: 14px;
+    margin: 0;
+  }
+  .question .choices .choice p span {
+    opacity: 0.4;
+  }
+  .question .choices .choice:hover {
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
+    background: rgba(0, 16, 109, 0.08);
+  }
+  .question .choices .choice.active {
+    border: 2px solid #6355ff;
+  }
+  .question .choices .sortable {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: rgba(0, 16, 109, 0.05);
+    border: 2px solid rgba(0, 16, 109, 0);
+    padding: 18px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+    cursor: pointer;
+  }
+  .question .choices .sortable .handle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-right: 12px;
+  }
+  .question .choices .sortable .handle .bar {
+    background: rgba(0, 0, 0, 0.2);
+    height: 2px;
+    width: 16px;
+    margin: 1.5px;
+  }
+  .question .choices .sortable p {
+    font-size: 14px;
+    margin: 0;
+  }
+  .question .choices .sortable p span {
+    opacity: 0.4;
+  }
+  .question .choices .sortable.bro {
+    background: rgba(99, 85, 255, 0.1);
+  }
+  .question .choices .sortable:hover {
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
+    background: rgba(0, 16, 109, 0.08);
+  }
+  .question input {
+    outline: none;
+    background: rgba(0, 16, 109, 0.05);
+    border: 2px solid rgba(0, 16, 109, 0);
+    padding: 18px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+    width: 93%;
+    font-size: 16px;
+  }
+  .question input:hover {
+    border: 2px solid #6355ff;
+  }
+  .question button {
+    border: none;
+    background: #6355ff;
+    width: 100%;
+    color: white;
+    border-radius: 14px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    margin-top: 0;
+    font-family: Plus Jakarta Sans, Inter, sans-serif;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+    cursor: pointer;
+    height: 0;
+    visibility: hidden;
+    opacity: 1;
+    padding: 0;
+  }
+  .question button:hover {
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
+    background: #3636d9;
+  }
+  .question button.active {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    visibility: visible;
+    opacity: 1;
+    padding: 16px;
+    margin-top: 20px;
+  }
+  .question.active {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+  }
+  #end {
+    position: fixed;
+    top: 100vh;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #6355ff;
+    z-index: 3;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+  }
+  #end.active {
+    top: 0;
+  }
+  #end img {
+    position: absolute;
+    height: 120vh;
+    left: 10vw;
+    bottom: -30vh;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+    -webkit-animation: float 1s ease-in-out forwards;
+            animation: float 1s ease-in-out forwards;
+  }
+  #end .expo {
+    position: absolute;
+    width: 40vw;
+    height: 70vh;
+    left: calc(14vw + 60vh);
+    bottom: 20vh;
+    color: white;
+  }
+  #end .expo h1 {
+    font-size: 5vw;
+    line-height: 100%;
+    letter-spacing: 0.1px;
+    margin: 0;
+    margin-bottom: 2vw;
+    margin-top: 2vw;
+  }
+  #end .expo h3 {
+    font-size: 1.5vw;
+    font-weight: 300;
+    line-height: 140%;
+  }
+  #end .expo h3 span {
+    font-weight: 500;
+  }
+  #end .expo button {
+    border: none;
+    padding: 1.7vw 5vw;
+    background: white;
+    border-radius: 100px;
+    font-family: Plus Jakarta Sans, Inter, sans-serif;
+    font-size: 2vw;
+    font-weight: 700;
+    margin-top: 1.5vw;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+    cursor: pointer;
+  }
+  #end .expo button:hover {
+    padding: 1.7vw 6vw;
+  }
+  @-webkit-keyframes float {
+    from {
+      bottom: -50vh;
+      opacity: 0;
+    }
+    to {
+      bottom: -30vh;
+      opacity: 1;
+    }
+  }
+  @keyframes float {
+    from {
+      bottom: -50vh;
+      opacity: 0;
+    }
+    to {
+      bottom: -30vh;
+      opacity: 1;
+    }
+  }
+}
+/*# sourceMappingURL=style.css.map */
