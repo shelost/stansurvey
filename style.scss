@@ -258,7 +258,7 @@ p{
             position: absolute;
             height: 120vh;
             left: 5vw;
-            bottom: -30vh;
+            bottom: -28vh;
             transition: 0.2s ease;
             animation: float 1s ease-in-out forwards;
         }
@@ -268,7 +268,7 @@ p{
             width: 50vw;
             height: 70vh;
             left: calc(14vw + 50vh);
-            bottom: 19vh;
+            bottom: 21vh;
             color: white;
             h2{
                 font-size: 2vw;
@@ -352,6 +352,7 @@ p{
                         width: 120px;
                         height: 120px;
                         border-radius: 100px;
+                        box-shadow: 0 10px 20px rgba(black, 0.2);
                     }
                     h1{
                         font-size: 1.2vw;
@@ -366,6 +367,8 @@ p{
                         font-weight: 300;
                         margin-bottom: 10px;
                         color: rgba(white, 0.7);
+                        padding-bottom: 15px;
+                        border-bottom: 1px solid rgba(white, 0.3);
                     }
                     h3{
                         font-size: 0.9vw;

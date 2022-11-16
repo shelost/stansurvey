@@ -275,7 +275,7 @@ p {
     position: absolute;
     height: 120vh;
     left: 5vw;
-    bottom: -30vh;
+    bottom: -28vh;
     -webkit-transition: 0.2s ease;
     transition: 0.2s ease;
     -webkit-animation: float 1s ease-in-out forwards;
@@ -286,7 +286,7 @@ p {
     width: 50vw;
     height: 70vh;
     left: calc(14vw + 50vh);
-    bottom: 19vh;
+    bottom: 21vh;
     color: white;
   }
   #end .expo h2 {
@@ -378,6 +378,8 @@ p {
     width: 120px;
     height: 120px;
     border-radius: 100px;
+    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   }
   #end .expo .gallery .avatar h1 {
     font-size: 1.2vw;
@@ -392,6 +394,8 @@ p {
     font-weight: 300;
     margin-bottom: 10px;
     color: rgba(255, 255, 255, 0.7);
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   }
   #end .expo .gallery .avatar h3 {
     font-size: 0.9vw;

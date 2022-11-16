@@ -49,7 +49,7 @@ let Q = [
         question: 'Taking client calls and coaching calls are ______________',
         type: 'text',
         choices: [
-            'Exciting and I look forward to them',
+            'Exciting and I look forward to them!',
             'Great in moderation (limited per month)',
             'Acceptable if it’s paid',
             'Draining and I no longer look forward to them',
@@ -60,11 +60,11 @@ let Q = [
         question: 'What makes you happier?',
         type: 'text',
         choices: [
-            'Your last video / social media content goes viral (1 million views)',
-            'You receive 0 negative and 100 appreciative & wholesome comments on a post',
-            'Your follower count grew by 10% in a week',
-            'You receive a large PR gift box from a company you were unaware of (before opening it)',
-            'One of the creators you like & follow dm’d you to see if you want to meet or collab'
+            'Your last video goes viral (1 million views!)',
+            'You receive 100 appreciative comments on a post',
+            'Your follower count grows by 10% in a week',
+            'You receive a large gift box from a new company',
+            'One of your favorite creators DMs you for a collab'
         ]
     },
     {
