@@ -271,10 +271,10 @@ p {
   #end.active {
     top: 0;
   }
-  #end img {
+  #end #result {
     position: absolute;
     height: 120vh;
-    left: 10vw;
+    left: 5vw;
     bottom: -30vh;
     -webkit-transition: 0.2s ease;
     transition: 0.2s ease;
@@ -283,11 +283,16 @@ p {
   }
   #end .expo {
     position: absolute;
-    width: 40vw;
+    width: 50vw;
     height: 70vh;
-    left: calc(14vw + 60vh);
-    bottom: 20vh;
+    left: calc(14vw + 50vh);
+    bottom: 19vh;
     color: white;
+  }
+  #end .expo h2 {
+    font-size: 2vw;
+    font-weight: 500;
+    margin: 0;
   }
   #end .expo h1 {
     font-size: 5vw;
@@ -295,17 +300,134 @@ p {
     letter-spacing: 0.1px;
     margin: 0;
     margin-bottom: 2vw;
-    margin-top: 2vw;
+    margin-top: 0.5vw;
   }
   #end .expo h3 {
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     font-weight: 300;
     line-height: 140%;
   }
   #end .expo h3 span {
     font-weight: 500;
   }
+  #end .expo h4 {
+    font-size: 1.1vw;
+    font-weight: 400;
+    line-height: 140%;
+    color: rgba(255, 255, 255, 0.5);
+  }
   #end .expo button {
+    border: none;
+    padding: 1.3vw 4vw;
+    background: white;
+    border-radius: 100px;
+    font-family: Plus Jakarta Sans, Inter, sans-serif;
+    font-size: 1.5vw;
+    font-weight: 700;
+    margin-top: 1vw;
+    margin-bottom: 1.5vw;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+    cursor: pointer;
+  }
+  #end .expo button:hover {
+    padding: 1.3vw 4.5vw;
+  }
+  #end .expo .bubble {
+    background: rgba(255, 255, 255, 0.1);
+    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 5px 25px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 1vw;
+  }
+  #end .expo .gallery {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: 100%;
+  }
+  #end .expo .gallery a {
+    color: white;
+    text-decoration: none;
+  }
+  #end .expo .gallery .avatar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-right: 20px;
+    border-radius: 20px;
+    padding: 5px;
+    width: 120px;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+  }
+  #end .expo .gallery .avatar img {
+    width: 120px;
+    height: 120px;
+    border-radius: 100px;
+  }
+  #end .expo .gallery .avatar h1 {
+    font-size: 1.2vw;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 5px;
+    margin-top: 15px;
+  }
+  #end .expo .gallery .avatar h2 {
+    font-size: 1vw;
+    margin: 0;
+    font-weight: 300;
+    margin-bottom: 10px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  #end .expo .gallery .avatar h3 {
+    font-size: 0.9vw;
+    line-height: 130%;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  #splash {
+    position: fixed;
+    top: 100vh;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #6355ff;
+    z-index: 3;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    color: white;
+  }
+  #splash h1 {
+    font-size: 56px;
+  }
+  #splash button {
     border: none;
     padding: 1.7vw 5vw;
     background: white;
@@ -318,28 +440,11 @@ p {
     transition: 0.2s ease;
     cursor: pointer;
   }
-  #end .expo button:hover {
+  #splash button:hover {
     padding: 1.7vw 6vw;
   }
-  @-webkit-keyframes float {
-    from {
-      bottom: -50vh;
-      opacity: 0;
-    }
-    to {
-      bottom: -30vh;
-      opacity: 1;
-    }
-  }
-  @keyframes float {
-    from {
-      bottom: -50vh;
-      opacity: 0;
-    }
-    to {
-      bottom: -30vh;
-      opacity: 1;
-    }
+  #splash.active {
+    top: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

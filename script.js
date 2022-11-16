@@ -344,3 +344,6 @@ function Activate(n) {
 Draw(Q)
 
 Activate(0)
+
+
+Id('start').onclick = () => {Id('splash').classList.remove('active')}
