@@ -72,7 +72,7 @@
                 border: 2px solid rgba(#00106D, 0);
                 border-radius: 15px;
                 padding: 5px;
-                width: 44%;
+                width: 43%;
                 margin: 0.5vw;
                 transition: 0.2s ease;
                 height: fit-content;
@@ -248,13 +248,12 @@
             top: 0;
         }
 
-        img{
+        #result{
             position: absolute;
             width: 90vw;
             left: 5vw;
-            top: 70vw;
+            top: 75vh;
             transition: 0.2s ease;
-            animation: float 1s ease-in-out forwards;
         }
 
         .expo{
@@ -263,12 +262,17 @@
             left: 7vw;
             top: 5vw;
             color: white;
+            h2{
+                font-size: 5vw;
+                margin-bottom: 0;
+                font-weight: 400;
+            }
             h1{
-                font-size: 6vw;
+                font-size: 10vw;
                 line-height: 100%;
                 letter-spacing: 0.1px;
                 margin: 0;
-                margin-bottom: 2vw;
+                margin-bottom: 1.5vw;
                 margin-top: 2vw;
             }
 
@@ -285,7 +289,7 @@
                 border: none;
                 color: black;
                 width: 86vw;
-                height: 13vw;
+                height: 15vw;
                 background: white;
                 border-radius: 100px;
                 font-family: Plus Jakarta Sans, Inter, sans-serif;
@@ -298,17 +302,120 @@
                     padding: 1.7vw 6vw;
                 }
             }
+
+            h4{
+                font-weight: 400;
+            }
+
+            .bubble{
+
+                background: rgba(white, 0.1);
+                //box-shadow: 0 10px 20px rgba(black, 0.1);
+                padding: 5px 25px;
+                padding-bottom: 0px;
+                border-radius: 20px;
+                text-align: center;
+                margin-top: 5vw;
+            }
+
+            .gallery{
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                width: 100%;
+
+                a{
+                    color: white;
+                    text-decoration: none;
+                }
+                .avatar{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    border-radius: 20px;
+                    padding: 5px;
+                    width: 90px;
+                    //background: rgba(white, 0);
+                    //box-shadow: 0 10px 20px rgba(black, 0.1);
+                    transition: 0.2s ease;
+                    img{
+                        width: 80px;
+                        height: 80px;
+                        border-radius: 100px;
+                        box-shadow: 0 10px 20px rgba(black, 0.2);
+                    }
+                    h1{
+                        font-size: 16px;
+                        font-weight: 600;
+                        margin: 0;
+                        margin-bottom: 5px;
+                        margin-top: 15px;
+                    }
+                    h2{
+                        font-size: 13px;
+                        margin: 0;
+                        font-weight: 300;
+                        margin-bottom: 10px;
+                        color: rgba(white, 0.7);
+                        padding-bottom: 15px;
+                    }
+                    h3{
+                        display: none;
+                        font-size: 13px;
+                        line-height: 130%;
+                        margin: 0;
+                        color: rgba(white, 0.5);
+                    }
+
+
+                }
+            }
         }
 
-        @keyframes float{
-            from {
-                bottom: -50vh;
-                opacity: 0;
-            }
-            to {
-                bottom: -30vh;
-                opacity: 1;
-            }
+    }
+
+
+    #splash{
+        position: fixed;
+        top: 100vh;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: #6355ff;
+        z-index: 3;
+
+        transition: 0.5s ease;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: white;
+
+        h1{
+            text-align: center;
+            width: 80%;
+            font-size: 40px;
         }
+
+        button{
+            border: none;
+            color: black;
+            width: 80vw;
+            height: 20vw;
+            background: white;
+            border-radius: 100px;
+            font-family: Plus Jakarta Sans, Inter, sans-serif;
+            font-size: 7vw;
+            font-weight: 700;
+            margin-top: 1.5vw;
+            transition: 0.2s ease;
+            cursor: pointer;
+        }
+
+        &.active{
+            top: 0;
+        }
+
     }
 }
